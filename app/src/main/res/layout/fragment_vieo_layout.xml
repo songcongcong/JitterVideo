@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/video_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scc.jittervideodemo.MyVideoPlayer
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.scc.jittervideodemo.MyVideoPlayer>
+
+        <RelativeLayout
+            android:id="@+id/rl_back_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginLeft="-65dp"
+            android:background="#fd5031"></RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
