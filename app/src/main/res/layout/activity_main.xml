@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="20dp"
-            android:text="翻页(list)"
+            android:text="列表(list)"
             android:textSize="20sp" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="20dp"
-            android:text="列表(list)"
+            android:text="翻页(list)"
             android:textSize="20sp" />
 
         <TextView

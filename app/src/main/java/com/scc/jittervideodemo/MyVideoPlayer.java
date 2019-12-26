@@ -59,7 +59,7 @@ public class MyVideoPlayer extends JzvdStd {
     public void setUp(String url, String title, int screen) {
         super.setUp(url, title, screen);
         if (url.startsWith("http")) {
-            HttpProxyCacheServer proxy = MyApplication.getProxy(context);
+            HttpProxyCacheServer proxy = MyApp.getProxy(context);
             String proxyUrl = proxy.getProxyUrl(url);
             super.setUp(proxyUrl, title, screen);
         } else {

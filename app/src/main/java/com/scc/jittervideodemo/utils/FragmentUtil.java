@@ -76,7 +76,9 @@ public class FragmentUtil {
                     fragmentBooleanMap.put(fragment,true);
                 }
             }
-            transaction.commit();
+            // transaction.commit();  在activity的onSaveInstanceState()之后调用的；当onSaveInstanceState()方法是在activity即将销毁前调用，用来保存数据，
+            // 如果在保存完状态后再给他添加fragment，就会出错，commit();替换为commitAllowingStateLoss();  (情况比如：在横竖屏切换时;在onstop但是没有ondestory的情况下切换fragment)
+            transaction.commitAllowingStateLoss();
         }
     }
 

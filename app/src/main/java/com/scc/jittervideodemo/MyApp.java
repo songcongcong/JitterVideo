@@ -12,13 +12,13 @@ import com.danikula.videocache.HttpProxyCacheServer;
  * 来源：
  */
 
-public class MyApplication extends Application {
+public class MyApp extends Application {
 
 
     private HttpProxyCacheServer proxy;
 
     public static HttpProxyCacheServer getProxy(Context context) {
-        MyApplication app = (MyApplication) context.getApplicationContext();
+        MyApp app = (MyApp) context.getApplicationContext();
         return app.proxy == null ? (app.proxy = app.newProxy()) : app.proxy;
     }
 
